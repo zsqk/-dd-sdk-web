@@ -1,1 +1,1 @@
-# -dd-sdk-web
+# dd-sdk-web

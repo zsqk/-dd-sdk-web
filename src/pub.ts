@@ -10,7 +10,7 @@ async function scan({ type = "all" }: { type: "all" | "qrCode" | "barCode" }) {
       onSuccess: function (data: Res) {
         resolve(data);
       },
-      onFail: function (err) {
+      onFail: function (err: any) {
         reject(err);
       },
     });

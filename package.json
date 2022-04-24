@@ -1,0 +1,23 @@
+{
+  "name": "dd-sdk-web",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsqk/dd-sdk-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsqk/dd-sdk-web/issues"
+  },
+  "homepage": "https://github.com/zsqk/dd-sdk-web#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
