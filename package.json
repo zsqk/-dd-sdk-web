@@ -19,5 +19,8 @@
   "homepage": "https://github.com/zsqk/dd-sdk-web#readme",
   "devDependencies": {
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "dingtalk-jsapi": "^2.13.92"
   }
 }
