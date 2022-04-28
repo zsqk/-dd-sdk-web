@@ -1,9 +1,23 @@
 export function log(err: any) {
-  if (err instanceof Error) {
-    send(err.toString());
-  }
+  send(`${err}`);
+  console.log(err);
 }
 
-export function send(str: string) {
-  console.log(str);
+let url = ``;
+let dingkey = "";
+
+export function init(p: { url: string; dingkey: string }) {
+  url = p.url;
+  dingkey = p.dingkey;
+}
+
+export async function send(str: string) {
+  await fetch(url, {
+    headers: { "Content-Type": "application/json" },
+    method: "POST",
+    body: JSON.stringify({
+      msgtype: "text",
+      text: { content: str + dingkey },
+    }),
+  }).then((r) => r.text());
 }
